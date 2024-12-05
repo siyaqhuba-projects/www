@@ -491,6 +491,120 @@
         .cta-button:hover::before {
             width: 100%;
         }
+            /* Testimonials Section Styling */
+    .testimonials-section {
+        padding: 6rem 0;
+        background: linear-gradient(to bottom, var(--light-bg), white);
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .section-title h2 {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    .section-title p {
+        font-size: 1.2rem;
+        color: #666;
+    }
+
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+
+    .testimonial-card {
+        background: white;
+        border-radius: 15px;
+        padding: 3rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        position: relative;
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .testimonial-content {
+        position: relative;
+        padding-top: 2rem;
+    }
+
+    .testimonial-content .fa-quote-left {
+        font-size: 2rem;
+        color: var(--primary-color);
+        opacity: 0.2;
+        position: absolute;
+        top: -1rem;
+        left: -0.5rem;
+    }
+
+    .testimonial-content p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #444;
+        margin-bottom: 2rem;
+        font-style: italic;
+    }
+
+    .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-top: 1px solid #eee;
+        padding-top: 1.5rem;
+    }
+
+    .author-avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--light-bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .author-avatar i {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+    }
+
+    .author-info h4 {
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .author-info .client-type {
+        color: #666;
+        font-size: 0.95rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .testimonials-section {
+            padding: 4rem 0;
+        }
+
+        .testimonial-card {
+            padding: 2rem;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+        }
+    }
     </style>
 </head>
 <body>
@@ -614,32 +728,46 @@
         </div>
     </section>
 
-    <section id="testimonials" class="testimonials-section">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Client Testimonials</h2>
-                <p>What our valued clients say about our security services</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left"></i>
-                        <p>"Siyaqhuba's professional security services have given us peace of mind. Their team is always alert and responsive."</p>
-                        <h4>John Smith</h4>
-                        <p class="client-type">Business Owner</p>
+<section id="testimonials" class="testimonials-section">
+    <div class="container">
+        <div class="section-title fade-in">
+            <h2>Client Testimonials</h2>
+            <p>What our valued clients say about our security services</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Siyaqhuba's professional security services have given us peace of mind. Their team is always alert and responsive."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>John Smith</h4>
+                            <p class="client-type">Business Owner</p>
+                        </div>
                     </div>
                 </div>
-                <div class="testimonial-card fade-in">
-                    <div class="testimonial-content">
-                        <i class="fas fa-quote-left"></i>
-                        <p>"The level of service and attention to detail is outstanding. Highly recommend their security solutions."</p>
-                        <h4>Sarah Johnson</h4>
-                        <p class="client-type">Property Manager</p>
+            </div>
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"The level of service and attention to detail is outstanding. Highly recommend their security solutions."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p class="client-type">Property Manager</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 <section id="contact" class="contact-section">
         <div class="container">
